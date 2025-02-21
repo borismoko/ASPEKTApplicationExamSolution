@@ -36,7 +36,6 @@ namespace Service.Implementation
 
             foreach (var contact in contacts.Where(c => c.CountryId == id))
             {
-                // Get the contacts for this specific company in the given country
                 var contactsFiltered = _contactService.FilterContacts(id, contact.CompanyId);
                 companyStats[key: contact.Company.Name] = contactsFiltered.Count();
             }

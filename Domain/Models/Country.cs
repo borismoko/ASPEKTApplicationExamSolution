@@ -9,7 +9,5 @@ namespace Domain.Models
     public class Country : BaseEntity
     {
         public string? Name { get; set; }
-
-        // public ICollection<Contact> Contacts { get; set; } = new List<Contact>();
     }
 }
